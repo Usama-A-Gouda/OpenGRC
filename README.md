@@ -52,3 +52,20 @@ The OpenGRC code of conduct is derived from the Laravel and Ruby codes of conduc
 - Behavior that can be reasonably considered harassment will not be tolerated.
 
 
+
+## Modern JavaScript architecture
+
+The repository now ships with a **NestJS** backend (`apps/api`) and a **Next.js** front-end (`apps/web`) that modernize the OpenGRC
+experience while keeping the project open-source and approachable. The NestJS service exposes RESTful endpoints for governance data
+such as compliance frameworks, while the Next.js application consumes those endpoints and delivers a responsive user interface.
+
+### Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+The command above runs the NestJS API on `http://localhost:3001` and the Next.js web application on `http://localhost:3000`. The
+two services communicate via JSON over HTTP and can be deployed independently if desired. See the `apps/api` and `apps/web`
+directories for additional configuration options.
